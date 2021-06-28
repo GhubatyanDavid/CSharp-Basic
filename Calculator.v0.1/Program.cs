@@ -16,10 +16,9 @@ namespace Calculator.v0._1
 			{
 				if (language == true)
 				{
-
-
 					Console.WriteLine("Sexmir ENTER");
 					Console.ReadKey();
+					Console.ReadLine();
 					Console.WriteLine("Grir Arajin Tivy");
 					decimal firstNumber = Convert.ToDecimal(Console.ReadLine());
 					Console.WriteLine("Grir Erkrord Tivy");
