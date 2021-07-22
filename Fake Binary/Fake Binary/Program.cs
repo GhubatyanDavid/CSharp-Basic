@@ -6,15 +6,19 @@ namespace Fake_Binary
     {
         static void Main(string[] args)
         {
-            string digith = "7 9 8 11 2 0 5 4 3 2 1";
-            string[] digiths = digith.Split(' ');
-
-            for (int i = 0; i < digiths.Length; i++)
+            string digith = "123456987";
+            int digiths = Convert.ToInt32(digith);
+            int result = 0;
+            for(int i= 0;i<digith.Length;i++)
             {
-                if ((digith[i]) > 5)
-                    Console.Write($"{digiths[i]} ");
+                
+                result = digiths %10;
+                digiths = digiths / 10;
+                if (result > 5)
+                    result = 0;
                 else
-                    Console.Write($"{digiths[i]} ");
+                    result = 1;
+                Console.WriteLine(result);
             }
 
         }
