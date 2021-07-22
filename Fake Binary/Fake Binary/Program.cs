@@ -6,20 +6,23 @@ namespace Fake_Binary
     {
         static void Main(string[] args)
         {
-            string digith = "123456987";
-            int digiths = Convert.ToInt32(digith);
+            string input = "123456987";
+            int inputs = Convert.ToInt32(input);
             int result = 0;
-            for(int i= 0;i<digith.Length;i++)
+            string output = null;
+            for(int i= 0;i<input.Length;i++)
             {
                 
-                result = digiths %10;
-                digiths = digiths / 10;
+                result = inputs %10;
+                inputs = inputs / 10;
                 if (result > 5)
                     result = 0;
                 else
                     result = 1;
-                Console.WriteLine(result);
+                output = output + result;
+                
             }
+            Console.WriteLine(output);
 
         }
     }
