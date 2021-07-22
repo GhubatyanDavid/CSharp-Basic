@@ -11,7 +11,7 @@ namespace Fake_Binary
 
             for (int i = 0; i < digiths.Length; i++)
             {
-                if (Convert.ToInt32(digiths[i]) > 5)
+                if ((digith[i]) > 5)
                     Console.Write($"{digiths[i]} ");
                 else
                     Console.Write($"{digiths[i]} ");
