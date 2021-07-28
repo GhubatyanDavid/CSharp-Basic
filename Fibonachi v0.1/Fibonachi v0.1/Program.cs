@@ -13,8 +13,6 @@ namespace Fibonachi_v0._1
                 second=sum;
                 Console.WriteLine(sum);
             }
-
-
         }
         static void Main(string[] args)
         {
