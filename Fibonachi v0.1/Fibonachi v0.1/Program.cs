@@ -4,7 +4,7 @@ namespace Fibonachi_v0._1
 {
     class Program
     {
-        static int fibonachi(int first,int second,int sum,int number)
+        static void fibonachi(int first,int second,int sum,int number)
         {
             while (sum < number)
             {
@@ -13,17 +13,17 @@ namespace Fibonachi_v0._1
                 second=sum;
                 Console.WriteLine(sum);
             }
-            return sum;
 
 
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("Type the length of number");
             int number = Convert.ToInt32(Console.ReadLine());
             int first = 0;
             int second = 1;
             int sum =0;
-            int result = fibonachi(first,second,sum,number);
+            fibonachi(first,second,sum,number);
         }
     }
 }
