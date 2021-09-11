@@ -8,7 +8,7 @@ namespace Fake_Binary_Version_2
         {
             string input = "123456987";
             int inputNumber = Convert.ToInt32(input);
-            int ForinputNumber = inputNumber;
+            const int  ForinputNumber = inputNumber;
             int  divider = 0;
             int result = 0;
             int degree = input.Length - 1;
