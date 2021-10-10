@@ -10,7 +10,6 @@ namespace Car
 {
     class Ship : Vehicle
     {
-        public int _cordinat;
         public Ship(int numberofPassenger,int year,int cordinat):base(numberofPassenger,year)
         {
             Console.WriteLine($"Ship Passenger number is ` {numberofPassenger}");
