@@ -16,7 +16,7 @@ namespace Faktorial
         {
             while (true)
             {
-                Console.WriteLine("Please Type The number!");
+                Console.WriteLine("Please Type The number! ");
                 BigInteger number = Convert.ToInt32(Console.ReadLine());
                 BigInteger factorial = Factorial(number);
                 Console.WriteLine($"{number}! - {factorial}");
